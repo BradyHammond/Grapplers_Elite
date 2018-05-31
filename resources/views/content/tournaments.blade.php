@@ -342,21 +342,21 @@
                                                                     <legend class="col-form-label col-md-4 col-sm-4 pt-0">Event Type</legend>
                                                                     <div class="col-md-8 col-sm-8">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi" value="gi" ng-if="tournament.type=='gi-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi" value="gi" ng-if="tournament.type!='gi-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi" value="gi-only" ng-if="tournament.type=='gi-only'" ng-checked="true" che>
+                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi" value="gi-only" ng-if="tournament.type!='gi-only'">
                                                                             <label class="form-check-label" for="edit-gi">
                                                                                 Gi Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-nogi" value="nogi" ng-if="tournament.type=='ng-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-nogi" value="nogi" ng-if="tournament.type!='ng-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-nogi" value="ng-only" ng-if="tournament.type=='ng-only'" ng-checked="true" checked>
+                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-nogi" value="ng-only" ng-if="tournament.type!='ng-only'">
                                                                             <label class="form-check-label" for="edit-nogi">
                                                                                 No Gi Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi&nogi" value="gi&nogi" ng-if="tournament.type=='gi&nogi'" ng-checked="true">
+                                                                            <input class="form-check-input" type="radio" name="edit-type" id="edit-gi&nogi" value="gi&nogi" ng-if="tournament.type=='gi&nogi'" ng-checked="true" checked>
                                                                             <input class="form-check-input" type="radio" name="edit-type" id="edit-gi&nogi" value="gi&nogi" ng-if="tournament.type!='gi&nogi'">
                                                                             <label class="form-check-label" for="edit-gi&nogi">
                                                                                 Gi & No Gi
@@ -370,21 +370,21 @@
                                                                     <legend class="col-form-label col-md-4 col-sm-4 pt-0">Event Age</legend>
                                                                     <div class="col-md-8 col-sm-8">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids" value="kids" ng-if="tournament.age=='kids-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids" value="kids" ng-if="tournament.age!='kids-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids" value="kids-only" ng-if="tournament.age=='kids-only'" ng-checked="true" checked>
+                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids" value="kids-only" ng-if="tournament.age!='kids-only'">
                                                                             <label class="form-check-label" for="edit-kids">
                                                                                 Kids Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-adults" value="adults" ng-if="tournament.age=='adults-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-adults" value="adults" ng-if="tournament.age!='adults-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-adults" value="adults-only" ng-if="tournament.age=='adults-only'" ng-checked="true" checked>
+                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-adults" value="adults-only" ng-if="tournament.age!='adults-only'">
                                                                             <label class="form-check-label" for="edit-adults">
                                                                                 Adults Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids&adults" value="kids&adults" ng-if="tournament.age=='kids&adults'" ng-checked="true">
+                                                                            <input class="form-check-input" type="radio" name="edit-age" id="edit-kids&adults" value="kids&adults" ng-if="tournament.age=='kids&adults'" ng-checked="true" checked>
                                                                             <input class="form-check-input" type="radio" name="edit-age" id="edit-kids&adults" value="kids&adults" ng-if="tournament.age!='kids&adults'">
                                                                             <label class="form-check-label" for="edit-kids&adults">
                                                                                 Kids & Adults
@@ -398,21 +398,21 @@
                                                                     <legend class="col-form-label col-md-4 col-sm-4 pt-0">Event Gender</legend>
                                                                     <div class="col-md-8 col-sm-8">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male" value="male" ng-if="tournament.gender=='m-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male" value="male" ng-if="tournament.gender!='m-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male" value="m-only" ng-if="tournament.gender=='m-only'" ng-checked="true" checked>
+                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male" value="m-only" ng-if="tournament.gender!='m-only'">
                                                                             <label class="form-check-label" for="edit-male">
                                                                                 Male Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-female" value="female" ng-if="tournament.gender=='f-only'" ng-checked="true">
-                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-female" value="female" ng-if="tournament.gender!='f-only'">
+                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-female" value="f-only" ng-if="tournament.gender=='f-only'" ng-checked="true" checked>
+                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-female" value="f-only" ng-if="tournament.gender!='f-only'">
                                                                             <label class="form-check-label" for="edit-female">
                                                                                 Female Only
                                                                             </label>
                                                                         </div>
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male&female" value="male&female" ng-if="tournament.gender=='male&female'" ng-checked="true">
+                                                                            <input class="form-check-input" type="radio" name="edit-gender" id="edit-male&female" value="male&female" ng-if="tournament.gender=='male&female'" ng-checked="true" checked>
                                                                             <input class="form-check-input" type="radio" name="edit-gender" id="edit-male&female" value="male&female" ng-if="tournament.gender!='male&female'">
                                                                             <label class="form-check-label" for="edit-male&female">
                                                                                 Male & Female

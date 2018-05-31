@@ -26,9 +26,6 @@
                         <a class="nav-link" href="/home"><em class="fa fa-home"></em> HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/getting-started"><em class="fa fa-tachometer-alt"></em> GETTING STARTED</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/schedule"><em class="far fa-calendar"></em> SCHEDULE</a>
                     </li>
                     <li class="nav-item">
@@ -39,13 +36,13 @@
                     </li>
                     <div id="adults-dropdown">
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/adult-program">Adult Program</a>
+                            <a class="nav-link dropdown-link" href="/program/adult">Adult Program</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/adult-belt-ranks">Adult Belt Ranks</a>
+                            <a class="nav-link dropdown-link" href="/belt-ranks/adult">Adult Belt Ranks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/adult-rates">Adult Rates</a>
+                            <a class="nav-link dropdown-link" href="/rates/adult">Adult Rates</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link dropdown-link" href="/faq/adult">Adult FAQ</a>
@@ -56,13 +53,13 @@
                     </li>               
                     <div id="kids-dropdown">
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/junior-program">Junior Program</a>
+                            <a class="nav-link dropdown-link" href="/program/junior">Junior Program</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/junior-belt-ranks">Junior Belt Ranks</a>
+                            <a class="nav-link dropdown-link" href="/belt-ranks/junior">Junior Belt Ranks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-link" href="/junior-rates">Junior Rates</a>
+                            <a class="nav-link dropdown-link" href="/rates/junior">Junior Rates</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link dropdown-link" href="/faq/junior">Junior FAQ</a>

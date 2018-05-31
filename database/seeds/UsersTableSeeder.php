@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             'password' => '$2y$10$xMgF742xNshHtA7V7ZX/MeyxUbbJHeOKvDiEt6.iPMGjwM/jLOilu',
             'superuser' => true,
             'created_at' => Carbon::now()->toDateTimeString(),
-            'update_at' => Carbon::now()->toDateTimeString()
+            'updated_at' => Carbon::now()->toDateTimeString()
         ]);
     }
 }

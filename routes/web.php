@@ -23,10 +23,6 @@ Route::get('/contact', function () {
     return view('content.contact');
 });
 
-Route::get('/getting-started', function () {
-    return view('content.getting_started');
-});
-
 Route::get('/schedule', function () {
     return view('content.schedule');
 });
@@ -40,16 +36,28 @@ Route::post('/tournaments/add', 'TournamentController@addTournament');
 Route::post('/tournaments/edit/{id}', 'TournamentController@editTournament');
 Route::delete('/tournaments/delete/{id}', 'TournamentController@deleteTournament');
 
-Route::get('/adult-program', function () {
+Route::get('/program/adult', function () {
     return view('content.adult_program');
 });
 
-Route::get('/adult-belt-ranks', function () {
+Route::get('/program/junior', function () {
+    return view('content.junior_program');
+});
+
+Route::get('/belt-ranks/adult', function () {
     return view('content.adult_belt_ranks');
 });
 
-Route::get('/adult-rates', function () {
+Route::get('/belt-ranks/junior', function () {
+    return view('content.junior_belt_ranks');
+});
+
+Route::get('/rates/adult', function () {
     return view('content.adult_rates');
+});
+
+Route::get('/rates/junior', function () {
+    return view('content.junior_rates');
 });
 
 Route::get('/faq/adult', 'FAQController@getAdultFAQ');
@@ -57,21 +65,6 @@ Route::get('/faq/junior', 'FAQController@getJuniorFAQ');
 Route::post('/faq/add', 'FAQController@addFAQ');
 Route::post('/faq/edit/{id}', 'FAQController@editFAQ');
 Route::delete('/faq/delete/{id}', 'FAQController@deleteFAQ');
-
-
-Route::get('/junior-program', function () {
-    return view('content.junior_program');
-});
-
-Route::get('/junior-belt-ranks', function () {
-    return view('content.junior_belt_ranks');
-});
-
-Route::get('/junior-rates', function () {
-    return view('content.junior_rates');
-});
-
-
 
 Route::get('/about', function () {
     return view('content.about');

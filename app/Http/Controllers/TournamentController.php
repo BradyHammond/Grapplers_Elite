@@ -28,19 +28,19 @@ class TournamentController extends Controller
             ]);
 
             $url = "";
-            if (strpos($request->input('edit-url'), "https://") !== FALSE)
+            if (strpos($request->input('input-url'), "https://") !== FALSE)
             {
-                $url = $request->input('edit-url');
+                $url = $request->input('input-url');
             }
 
-            elseif (strpos($request->input('edit-url'), "http://") !== FALSE)
+            elseif (strpos($request->input('input-url'), "http://") !== FALSE)
             {
-                $url = "https://" + substr($request->input('edit-url'), 7);
+                $url = "https://" + substr($request->input('input-url'), 7);
             }
 
             else
             {
-                $url = ("https://" . $request->input('edit-url'));
+                $url = ("https://" . $request->input('input-url'));
             }
 
             Tournament::insert(['name' => $request->input('input-name'), 'url' => $url,
