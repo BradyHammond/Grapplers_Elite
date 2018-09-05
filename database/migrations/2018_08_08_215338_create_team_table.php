@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFaqTable extends Migration
+class CreateTeamTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateFaqTable extends Migration
      */
     public function up()
     {
-        Schema::create('faq', function (Blueprint $table) {
+        Schema::create('team', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('age');
-            $table->longText('question');
-            $table->longText('answer');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->boolean('captain');
+            $table->string('belt');
+            $table->longText('bio')->nullable();
+            $table->longText('awards')->nullable();
+            $table->string('image')->nullable();
             $table->integer('order');
             $table->timestamps();
         });
@@ -30,6 +34,6 @@ class CreateFaqTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('faq');
+        Schema::dropIfExists('team');
     }
 }

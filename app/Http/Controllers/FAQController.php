@@ -56,7 +56,10 @@ class FAQController extends Controller
 
     public function deleteFAQ($id)
     {
-        FAQ::where('id', $id)->delete();
+        if (Auth::check()) 
+        {
+            FAQ::where('id', $id)->delete();
+        }
         return redirect()->back();
     }
 

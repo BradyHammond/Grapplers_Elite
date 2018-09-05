@@ -33,7 +33,7 @@ $(".expand-table").click(function() {
         $(this).children().removeClass("fa-caret-down");
         $(this).children().addClass("fa-caret-right");
 
-        var $this = $(this)
+        var $this = $(this);
         setTimeout(function(){$this.parent().next().addClass("hidden");}, 160);
     }
 

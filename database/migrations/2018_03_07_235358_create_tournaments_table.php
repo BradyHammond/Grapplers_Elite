@@ -23,7 +23,7 @@ class CreateTournamentsTable extends Migration
             $table->string('gender')->nullable();
             $table->string('pricing')->nullable();
             $table->string('location')->nullable();
-            $table->string('notes')->nullable();
+            $table->longText('notes')->nullable();
             $table->timestamps();
         });
     }

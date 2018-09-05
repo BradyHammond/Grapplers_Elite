@@ -16,18 +16,18 @@
             <div class="card-body">
                 <h3 class="card-title">Contact Us</h3>
                 <h6 class="card-subtitle mb-2 text-muted">Send us a message.</h6>
-                <form class="form-horizontal" action="" method="post">
+                <form class="form-horizontal" action="/contact/send" method="post">
                     <fieldset>
                         <div class="form-group">
                             <label class="col-12 control-label no-padding" for="name">Name</label>
                             <div class="col-12 no-padding">
-                                <input id="name" name="name" type="text" placeholder="Your Name" class="form-control">
+                                <input id="name" name="name" type="text" placeholder="Your Name" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-12 control-label no-padding" for="email">Email</label>
                             <div class="col-12 no-padding">
-                                <input id="email" name="email" type="text" placeholder="Your Email" class="form-control">
+                                <input id="email" name="email" type="text" placeholder="Your Email" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -39,12 +39,12 @@
                         <div class="form-group">
                             <label class="col-12 control-label no-padding" for="message">Message</label>
                             <div class="col-12 no-padding">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." rows="5"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." rows="5" required></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-12 text-center no-padding">
-                                <button type="submit" id="submit" class="btn btn-primary btn-md">Submit</button>
+                                <button type="submit" id="submit" class="btn btn-primary btn-md" disabled>Submit</button>
                             </div>
                         </div>
                     </fieldset>

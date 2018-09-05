@@ -300,6 +300,10 @@ p {
   outline: none; 
 }
 
+.btn-submit {
+    border-radius: .3rem !important;
+}
+
 .dropdown a {
   color: #444444; 
 }
@@ -329,7 +333,7 @@ p {
   z-index: 1000;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: 1px solid #eee;
+  /*border-right: 1px solid #eee;*/
   background: #55676A; 
 }
 
@@ -843,4 +847,8 @@ input[type=checkbox]:checked + label {
 
 .todo-list-footer .btn {
   border-radius: .4rem; 
+}
+
+.white-text {
+  color: #ffffff;
 }

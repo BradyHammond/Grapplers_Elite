@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFaqTable extends Migration
+class CreatePolicyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateFaqTable extends Migration
      */
     public function up()
     {
-        Schema::create('faq', function (Blueprint $table) {
+        Schema::create('policy', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('age');
-            $table->longText('question');
-            $table->longText('answer');
+            $table->string('header');
+            $table->longText('content');
             $table->integer('order');
             $table->timestamps();
         });
@@ -30,6 +29,6 @@ class CreateFaqTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('faq');
+        Schema::dropIfExists('policy');
     }
 }

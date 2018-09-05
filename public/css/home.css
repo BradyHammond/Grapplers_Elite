@@ -1,0 +1,50 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 792px) {
+    .main-content 
+    {
+        margin-left: 0;
+        margin-top: 72px;
+    }
+
+    .home-header
+    {
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 793px) {
+    .main-content {
+      margin-left: 264px;
+      margin-top: 0;
+    }
+}
+
+.jumbotron-main {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-header {
+    border: 0px;
+}
+
+.jumbotron-sub {
+    background: none
+}
+
+.img-logo {
+    height: 72px;
+    width: 72px;
+}

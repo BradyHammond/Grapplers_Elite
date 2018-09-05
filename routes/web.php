@@ -11,17 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('content.home');
-});
-
-Route::get('/home', function () {
-    return view('content.home');
-});
+Route::get('/', 'HomeController@getHome');
+Route::get('/home', 'HomeController@getHome');
+Route::post('/home/add', 'HomeController@addCard');
+Route::post('/home/edit/{id}', 'HomeController@editCard');
+Route::delete('/home/delete/{id}', 'HomeController@deleteCard');
 
 Route::get('/contact', function () {
     return view('content.contact');
 });
+Route::post('/contact', 'ContactController@sendMail');
 
 Route::get('/schedule', function () {
     return view('content.schedule');
@@ -36,29 +35,21 @@ Route::post('/tournaments/add', 'TournamentController@addTournament');
 Route::post('/tournaments/edit/{id}', 'TournamentController@editTournament');
 Route::delete('/tournaments/delete/{id}', 'TournamentController@deleteTournament');
 
-Route::get('/program/adult', function () {
-    return view('content.adult_program');
-});
+Route::get('/program/adult', 'ProgramController@getAdultProgram');
+Route::get('/program/junior', 'ProgramController@getJuniorProgram');
+Route::post('/program/add', 'ProgramController@addProgram');
+Route::post('/program/edit/{id}', 'ProgramController@editProgram');
+Route::delete('/program/delete/{id}', 'ProgramController@deleteProgram');
 
-Route::get('/program/junior', function () {
-    return view('content.junior_program');
-});
+Route::get('/belt-ranks/adult', 'BeltsController@getAdultBelts');
+Route::get('/belt-ranks/junior', 'BeltsController@getJuniorBelts');
+Route::post('/belt-ranks/add', 'BeltsController@addBelt');
+Route::post('/belt-ranks/edit/{id}', 'BeltsController@editBelt');
+Route::delete('/belt-ranks/delete/{id}', 'BeltsController@deleteBelt');
 
-Route::get('/belt-ranks/adult', function () {
-    return view('content.adult_belt_ranks');
-});
-
-Route::get('/belt-ranks/junior', function () {
-    return view('content.junior_belt_ranks');
-});
-
-Route::get('/rates/adult', function () {
-    return view('content.adult_rates');
-});
-
-Route::get('/rates/junior', function () {
-    return view('content.junior_rates');
-});
+Route::get('/rates/adult', 'RatesController@getAdultRates');
+Route::get('/rates/junior', 'RatesController@getJuniorRates');
+Route::post('/rates/edit/{id}', 'RatesController@editRates');
 
 Route::get('/faq/adult', 'FAQController@getAdultFAQ');
 Route::get('/faq/junior', 'FAQController@getJuniorFAQ');
@@ -66,25 +57,26 @@ Route::post('/faq/add', 'FAQController@addFAQ');
 Route::post('/faq/edit/{id}', 'FAQController@editFAQ');
 Route::delete('/faq/delete/{id}', 'FAQController@deleteFAQ');
 
-Route::get('/about', function () {
-    return view('content.about');
-});
+Route::get('/about', 'AboutController@getAbout');
+Route::post('/about/edit/{id}', 'AboutController@editAbout');
 
-Route::get('/team', function () {
-    return view('content.team');
-});
+Route::get('/team', 'TeamController@getTeam');
+Route::post('/team/add', 'TeamController@addTeamMember');
+Route::post('/team/edit/{id}', 'TeamController@editTeamMember');
+Route::delete('/team/delete/{id}', 'TeamController@deleteTeamMember');
 
-Route::get('/policies', function () {
-    return view('content.policies');
-});
+Route::get('/policies', 'PolicyController@getPolicy');
+Route::post('/policies/add', 'PolicyController@addPolicy');
+Route::post('/policies/edit/{id}', 'PolicyController@editPolicy');
+Route::delete('/policies/delete/{id}', 'PolicyController@deletePolicy');
 
-Route::get('/university', function () {
-    return view('content.university');
-});
+Route::get('/university', 'UniversityController@getUniversity');
+Route::post('/university/add', 'UniversityController@addUniversity');
+Route::post('/university/edit/{id}', 'UniversityController@editUniversity');
+Route::delete('/university/delete/{id}', 'UniversityController@deleteUniversity');
 
-Route::get('/outreach', function () {
-    return view('content.outreach');
-});
+Route::get('/outreach', 'OutreachController@getOutreach');
+Route::post('/outreach/edit/{id}', 'OutreachController@editOutreach');
 
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

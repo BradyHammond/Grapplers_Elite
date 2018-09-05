@@ -70,7 +70,10 @@ class TournamentController extends Controller
 
     public function deleteTournament($id)
     {
-        Tournament::where('id', $id)->delete();
+        if (Auth::check()) 
+        {
+            Tournament::where('id', $id)->delete();
+        }
         return redirect()->back();
     }
 
@@ -115,5 +118,4 @@ class TournamentController extends Controller
 
         return redirect()->back();
     }
-    
 }

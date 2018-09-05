@@ -3,7 +3,7 @@
 @section('meta')
 @endsection
 
-@section('title', "Grapplers Elite - Login")
+@section('title', "Grapplers Elite - Reset Password")
 
 @section('stylesheets')
 @endsection

@@ -15,6 +15,7 @@
         @yield('stylesheets')
     </head>
     <body>
+        @yield('content-super')
         <div class="container-fluid" id="wrapper">
             <nav class="sidebar">
                 <h1 class="site-title">

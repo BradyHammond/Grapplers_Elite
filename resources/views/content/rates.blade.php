@@ -24,19 +24,19 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="edit-menu-label">Edit About Content</h5>
+                                    <h5 class="modal-title" id="edit-menu-label">Edit Rates Content</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true"><em class="fas fa-times"></em></span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" action="/about/edit/{{$about->id}}">
+                                    <form method="POST" action="/rates/edit/{{$rates->id}}">
                                         @method('POST')
                                         @csrf
                                         <div class="form-group row">
                                             <label for="edit-content" class="col-md-4 col-sm-4 col-form-label">Rich HTML Editor</label>
                                             <div class="col-md-8 col-sm-8">
-                                                <textarea class=" form-control" name="edit-content" id="edit-content" rows="5" placeholder="Content..." required>{{$about->content}}</textarea>
+                                                <textarea class=" form-control" name="edit-content" id="edit-content" rows="5" placeholder="Content..." required>{{$rates->content}}</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -51,7 +51,7 @@
                     </div>
                 @endif
                 <div>
-                    {!!$about->content!!}
+                    {!!$rates->content!!}
                 </div>
             </div>
         </div>

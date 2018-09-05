@@ -30,22 +30,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h5 class="timeline-title mt-2">Lorem ipsum</h5>
+                                <h5 class="timeline-title mt-2">Coming Soon</h5>
                             </div>
                             <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge primary"><em class="fa fa-thumbtack"></em>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5 class="timeline-title mt-2">Dolor</h5>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>We are in the middle of migrating to a new scheduling software. When that process is finished, our schedule will be available here.</p>
                             </div>
                         </div>
                     </li>
