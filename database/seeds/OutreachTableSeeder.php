@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\About;
+use App\Outreach;
 use Carbon\Carbon;
 
 class OutreachTableSeeder extends Seeder
